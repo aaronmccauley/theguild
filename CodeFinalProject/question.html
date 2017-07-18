@@ -9,8 +9,61 @@
   <body> 
     <header id="top" class="main-header">
 
- <div class="navigation">
+<!-- MAIN NAV ON MOBILE SCREENS -->
+
+              <div href="#" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+
+
+ <div style="display: none;" class="mobile-nav">
+      <ul class="mobile-list">
+
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+
+          <li>
+              <a href="question.html">Ask Question</a>
+          </li>
+      
+          <li class="dropdown-mobile1"><a href="#">Resources</a>
+            <div class="reveal-mobile1">
+              <a href="undercon.html"> Forum </a>
+              <a href="undercon.html"> Videos </a>
+              <a href="undercon.html"> Book Reviews </a>
+            </div>
+          </li>
+        
+          <li class="dropdown-mobile2"><a href="#">Shop</a>
+            <div class="reveal-mobile2">
+             <a href="undercon.html"> Tools of the Trade </a>
+             <a href="undercon.html"> Books </a>
+             <a href="undercon.html"> Curriculum </a>
+            </div>
+         </li>
+      
+        <li class="dropdown-mobile3"><a href="#">The Guild Masters</a>
+        <div class="reveal-mobile3">
+             <a href="undercon.html"> Matthew Benjamin </a>
+             <a href="undercon.html"> Aaron McCauley </a>
+             <a href="undercon.html"> Micah Lovell </a>
+        </div>
+        </li>
+
+      </ul>
+
+      </div>
+
+
+<!-- MAIN NAV ON BIG SCREENS -->
+
+    <div class="navigation">
       <span class="title"><a href="index.html">The Guild</a></span>
+
+
       <ul class="main-nav">
 
           <li>
@@ -42,11 +95,39 @@
         </li>
 
       </ul>
+
       </div>
 
-      <div class="ask">Ask A Question</div>
+<!--  Form For Submitting Questions -->
+
+      <form>
+
+      <h1 class="titleq"> Ask Your Question </h1>
+
+      <ul class="form-style-1">
+          <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+          <li>
+              <label>Email <span class="required">*</span></label>
+              <input type="email" name="field3" class="field-long" />
+          </li>
+          <li>
+              <label>Your Question <span class="required">*</span></label>
+              <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+          </li>
+          <li>
+              <input type="submit" value="Submit" />
+          </li>
+      </ul>
+      </form>
 
     </header>
 
+</body>
 
+<!--JavaScript Source with Jquery Library-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js" type="text/javascript"></script>
+
+</html>
     
