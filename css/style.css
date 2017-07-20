@@ -187,6 +187,9 @@ header {
 
 /* Media Queries -------------------- */
 
+
+/* Desktop Media Query */
+
 @media only screen and (max-width: 1024px) {
   .primary-content,
   .secondary-content {
@@ -203,7 +206,36 @@ header {
 
   }
 
+/* Medium Screens to Tablet */
 
+@media only screen and (max-width: 976px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .title {
+    display: block;
+    font-size: 2em;
+    width: 10px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 5px;
+  }
+
+}
+
+
+/* Tablet Media Query */
 
 @media only screen and (max-width: 768px) {
   .primary-content,
@@ -212,14 +244,12 @@ header {
     padding: 20px;
     border-top: none;
   }
+
   .main-header {
     max-height: 380px;
     padding: 50px 25px 0;
   }
-  .title {
-    font-size: 1.3rem;
-    border: none;
-  }
+
   h1 {
     font-size: 5rem;
     line-height: 1.1;
@@ -238,23 +268,39 @@ header {
   }
 
   .main-nav li {
-    display: inline-block;
-
+    font-size: .95em;
   }
 
   .reveal a {
-    display: inline-block;
+    padding-top: 20px;
+    text-align: left;
   }
 
   .navigation {
     border: none;
+    display: inline-block;
+    text-align: center;
   }
 
-}
+  .title {
+    display: block;
+    font-size: 2em;
+    width: 100%;
+    padding-left: 47%;
+    padding-right: 50%;
+  } 
+
+  .alert {
+    padding-top: 120px;
+  }
+
+} 
 
 
 
-@media only screen and (max-width: 480px) {
+/* Mobile Media Query increased from 480px to 550px */
+
+@media only screen and (max-width: 550px) {
 
 .hamburger {
   cursor: pointer;
@@ -318,6 +364,10 @@ margin-bottom: 6px;
 .navigation {
   border: none;
   display: none;
+}
+
+.footer {
+  font-size: .75em;
 }
 
 }
